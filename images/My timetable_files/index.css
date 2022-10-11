@@ -1,0 +1,153 @@
+body{
+    background-color: #282C47;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97vw;
+    height: 100vh;
+    gap: 10px;
+}
+
+.col1{
+    /* width: 20%; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile{
+    height: 50%;
+    background-color: #3477eb;
+    border-radius: 20px;
+    padding: 10px;
+}
+.profile img{
+    width: 20%;
+    border-radius: 50%;
+    border:5px solid white;
+}
+.category{
+    color: gray;
+    cursor: pointer;
+    height: 50%;
+    background-color: #0f2642;
+    border-radius: 20px;
+}
+.cat-type h1, img{
+    display: inline;
+}
+
+
+.col2{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+}
+.work_hr{
+display: flex;
+border-top: 20px solid orange;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+}
+.cat-type{
+    display: flex;
+    align-content: space-between;
+
+}
+.timespent{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.timespent p{
+    font-size: 10px;
+    color: grey;
+}
+.col2 img{
+    width: 10px;
+    height: 10px;
+}
+.play_hr{
+display: flex;
+border-top: 20px solid skyblue;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+}
+.study_hr{
+display: flex;
+border-top: 20px solid #eb347d;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+}  
+.exercise_hr{
+display: flex;
+border-top: 20px solid lightgreen;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+}  
+.social_hr{
+display: flex;
+border-top: 20px solid #9B59B6;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+ }  
+.selfcare_hr{
+display: flex;
+border-top: 20px solid yellow;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+}  
+.col2 :hover{
+    background-color: darkslateblue;
+}
+.category h1:hover{
+color: white;
+}
+
+
+
+@media only screen and (max-width:760px) {
+    .container{
+    height: 100vh;
+    flex-direction: column;
+    font-size: 12px;
+    }
+    .timespent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .timespent p{
+        font-size: 10px;
+        text-align: right;
+    }
+    .col1{
+    height: 50%;
+    width: 100%;
+    }
+    .col2{
+    height: 50%;
+    width: 100%;
+    grid-template-columns:1fr;
+    }
+    
+    .profile{
+        height: 70%;
+    }
+    .category h1{
+        height: 30%;
+        padding: 20px;
+        display: inline-block;
+    }
+}
